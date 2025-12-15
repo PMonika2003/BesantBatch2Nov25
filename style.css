@@ -151,7 +151,7 @@ body {
     /* overflow: hidden; */
     /* overflow: scroll; */
     /* overflow: auto; */
-/* } */
+/* } 
 
 
 /* 
@@ -170,12 +170,96 @@ body {
     height: 100px;
     display: inline-block;
     visibility: hidden;
+}  
+
+Postions in css
+
+Relative - Postioned relative to hwere it normally is
+
+fixed - postioned relative to view port or webpage
+
+absolute - postioned relative to nearest ancestor 
+
+sticky - postion based on scroll 
+
+static - default posbtion for an element 
+
+
+
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    /* position: relative; 
+      top: 100px;
+    left: 100px;
+   
+    position: fixed;
+    right: 0px;
+    bottom: 0px; 
+     position: sticky; 
+
+  
+}
+
+ #box2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    /* position: sticky;
+    top: 50px;
+    left: 50px;
+}
+
+#box3 {
+    width: 50px;
+    height: 50px;
+    background-color: lightslategrey;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+
+
+   Combinators - explains the realationship bt listed sectors
+
+   | = desecdent 
+   > = child
+   ~ = general sibling
+   + = adjacent
+
+    
 } 
 
-9994030296 - Dinesh
-name
-dept 
-passed 
-course  */
+#container {
+    border: 2px solid;
+}
+
+/* #container p {
+    background-color: lightcoral;
+}  */
+
+
+/* #container > p {
+    background-color: lightcoral;
+}  */
+
+/* #container ~ p {
+    background-color: lightcoral;
+} 
+
+#container + p {
+    background-color: lightcoral;
+} */
+
+
+
+
+
+
+
+
+
 
 
