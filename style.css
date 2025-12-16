@@ -251,7 +251,143 @@ static - default posbtion for an element
 
 #container + p {
     background-color: lightcoral;
-} */
+} 
+
+Pseudo classes 
+
+
+
+
+
+
+
+a:link {
+    color: lightcoral;
+}
+
+a:hover {
+    color: chartreuse;
+    font-size: large;
+}
+
+a:visited {
+    color: grey;
+}
+
+li:hover {
+    background-color: lightcoral;
+    font-size: large;
+}
+
+li:not(:hover) {
+    background-color: grey;
+} 
+
+li:nth-child(8n) {
+    background-color: yellow;
+}
+ 
+
+
+Pseudo element - ::
+
+
+
+h1::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line {
+    background-color: greenyellow;
+}
+p::selection {
+    color: white;
+    background-color: darkgreen;
+}
+
+#veggies li::before {
+    content: "✔️";
+}
+
+#carrot::after {
+    content: "🥕";
+}
+#beans::after {
+    content: "🫛";
+}
+#beetroot::after {
+    content: "🫚";
+}
+
+
+
+#veggies li::marker {
+    content: none;
+} 
+    
+
+Flexbox 
+
+
+
+*/ 
+
+
+.container {
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-evenly; */
+    /* align-content: space-between; */
+    align-content: flex-start;
+    column-gap: 3em;
+    row-gap: 5em;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+  /* justify-content: space-between; */
+    /* justify-content: space-around; */
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#box1 {
+    background-color: lightgreen;
+}
+
+#box2 {
+    background-color: lightcoral;
+}
+
+#box3 {
+    background-color: steelblue;
+}
+#box4 {
+    background-color: violet;
+}
+
+#box5 {
+    background-color: lightpink;
+}
 
 
 
